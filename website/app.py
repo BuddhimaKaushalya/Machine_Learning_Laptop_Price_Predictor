@@ -60,7 +60,7 @@ def index():
         traverse_list(gpu_list, gpu)
 
         pred_value = prediction(feature_list)
-        pred_value = np.round(pred_value[0],2)*221
+        pred_value = np.round(pred_value[0],2)*333
 
     return render_template('index.html', pred_value=pred_value)
 
